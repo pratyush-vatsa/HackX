@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .container {
+            text-align: center;
+            padding: 100px;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+    
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+    
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        
+        p {
+            color: #777;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+    
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .doctor{
+            width: 100px;
+            display: block;
+            margin-left: 50px;
+            height: 105px;
+
+         }
+
+         .patient{
+            width: 150px;
+            height: 100px;
+
+
+         }
+        .doc{
+            float: left;
+            align-content: center;
+            position: relative;
+            top: 20px;
+            margin-left: 400px;
+            height: 200px;
+            width: 200px;
+            
+        }
+        .pat{
+            float: left;
+            align-content: center;
+            position: relative;
+            left: 100px;
+            margin-top: 22px;
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            margin: 10px;
+        
+        }
+        .newsletter{
+            text-align: center;
+        }
+        .footer-top{
+            float: right;
+        }
+
+        .newsletter {
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .newsletter button[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .newsletter button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to <span style="color: #3498db;">MediConnect</span></h1>
+        <p>Please select your role:</p>
+        <div class="doc">
+            <img src="/images/doctor.png"  class="doctor" alt="doctor">
+            <a href="Doctors.html" class="btn">Doctor</a>
+        </div>
+        
+        <div class="pat">
+            <img src="/images/patient.avif"  class="patient" alt="Patient">
+            <a href="Patient.html" class="btn">Patient</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Stay updated with the latest health news and updates.</p>
+            <form action="#">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    
+        <div class="footer-top">
+            
+                <a href="#">Register Now</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ’s</a>
+                <a href="#">Terms &amp; Conditions</a>
+                
+            
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Portal</title>
+    <style>
+     body, h1, h2, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            min-height: 100%;
+            position: relative;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff6600;
+        }
+        
+        main {
+            padding: 20px;
+            padding-bottom: 70px;
+        }
+        
+        section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+    
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px 0;
+            position: absolute;
+            text-decoration: none;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            nav li {
+                margin: 10px 0;
+            }
+        }
+        
+        .top-speciality-card {
+            display: inline-block;
+            margin-right: 30px;
+            background-color: #ff6600;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        .top-speciality-card img {
+            width: 70px;
+            height: 70px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .top-speciality-card .content {
+            text-align: center;
+        }
+        
+        .top-speciality-card h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        .top-speciality-card .price {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .top-speciality-card .cta {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .top-speciality-card .cta:hover {
+            background-color: #ff6600;
+        }
+        
+        .my {
+            display: inline-block;
+            color: #fff;
+            background-color: turquoise;
+            height: 200px;
+            width: 200px;
+            margin-left: 10px;
+            margin-right: 25px;
+            border-radius: 8%;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+        .top-speciality-card:hover {
+            transform: scale(1.05);
+        }
+        .my:hover {
+            transform: scale(1.05);
+        }
+        
+        .py {
+            color: #333;
+            text-decoration: none;
+        }
+        .le>h2{
+            margin-left: 10px;
+        }
+
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./profile.html">My Profile</a></li>
+                <li><a href="./medicalreport.html">Medical Records</a></li>
+                <li><a href="./hosdetail.html">Nearby Hospitals</a></li>
+                <li><a href="Patient.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section>
+            <h1>Welcome to Your Health Portal</h1>
+        </section>
+        <section class="refer">
+            <h2>Video Consultation</h2>
+            <div class="top-speciality-card"><a href="#"><img src="./images/top-speciality-gynaecologist.svg" width="70" height="70" alt="Online Gynecologist" style="margin-top: 10px;"></a>
+                <div class="content">
+                    <h4 class="heading">Gynaecology</h4>
+                    <p class="price">₹<!-- -->599</p><a class="link cta" href="/consult/direct/new_consultation?id=16">Consult now<span class="icon-ic_next_cheveron"></span></a></div></div>
+            <div class="top-speciality-card"><a href="#"><img src="./images/top-speciality-psychiatric.svg" width="70" height="70" alt="Online Gynecologist" style="margin-top: 10px;"></a>
+                    <div class="content">
+                        <h4 class="heading">Psychiatry</h4>
+                        <p class="price">₹<!-- -->499</p><a class="link cta" href="/consult/direct/new_consultation?id=16">Consult now<span class="icon-ic_next_cheveron"></span></a></div></div>
+            <div class="top-speciality-card"><a href="#"><img src="./images/dermatology.svg" width="70" height="70" alt="Online Gynecologist" style="margin-top: 10px;"></a>
+                    <div class="content">
+                        <h4 class="heading">Dermatology</h4>
+                        <p class="price">₹<!-- -->499</p><a class="link cta" href="/consult/direct/new_consultation?id=16">Consult now<span class="icon-ic_next_cheveron"></span></a></div></div>
+             <div class="top-speciality-card"><a href="#"><img src="./images/physician.svg" width="70" height="70" alt="Online Gynecologist" style="margin-top: 10px;"></a>
+                    <div class="content">
+                        <h4 class="heading">Physician</h4>
+                        <p class="price">₹<!-- -->599</p><a class="link cta" href="/consult/direct/new_consultation?id=16">Consult now<span class="icon-ic_next_cheveron"></span></a></div></div>
+            <div class="top-speciality-card"><a href="#"><img src="./images/top-speciality-stomach.svg" width="70" height="70" alt="Online Gynecologist" style="margin-top: 10px;"></a>
+                    <div class="content">
+                        <h4 class="heading">Stomach and digestion</h4>
+                        <p class="price">₹<!-- -->599</p><a class="link cta" href="/consult/direct/new_consultation?id=16">Consult now<span class="icon-ic_next_cheveron"></span></a></div></div>
+        </section>
+        <section class="le">
+            <h2>Laboratory Test</h2>
+            <a href="#" class="py"><div class="my"><h3>Thyroid Profile</h3>Known as Thyroid Profile Total Blood <br><br><div class="c-highlight-topTest__height"><div class="o-flex c-highlight-topTest"><div class="c-highlight-topTest__text"><div>E-Reports on same day</div></div></div></div><div><span class="u-font-bold o-font-size--18"><br><br>₹400</span></div></a><div class="u-text--center u-border--std u-line-height-std-half u-font-bold u-pointer" style="border-top: none; line-height: 2.5;"><div class="o-f-color--plight"></div></div></div>
+        </div> </a>  
+        <a href="#" class="py"><div class="my"><h3>Lipid Profile</h3>Known as Lipid Profile Blood<br><br><div class="c-highlight-topTest__height"><div class="o-flex c-highlight-topTest"><div class="c-highlight-topTest__text"><div>E-Reports on same day</div></div></div></div><div><span class="u-font-bold o-font-size--18"><br><br>₹600</span></div></a><div class="u-text--center u-border--std u-line-height-std-half u-font-bold u-pointer" style="border-top: none; line-height: 2.5;"><div class="o-f-color--plight"></div></div></div>
+        </div> </a>
+        <a href="#" class="py"><div class="my"><h3>Vitamin B12</h3>Known as Vitamin B12 Conventional Blood<br><br><div class="c-highlight-topTest__height"><div class="o-flex c-highlight-topTest"><div class="c-highlight-topTest__text"><div>E-Reports on same day</div></div></div></div><div><span class="u-font-bold o-font-size--18"><br><br>₹1000</span></div></a><div class="u-text--center u-border--std u-line-height-std-half u-font-bold u-pointer" style="border-top: none; line-height: 2.5;"><div class="o-f-color--plight"></div></div></div>
+        </div></a>   
+        <a href="#" class="py"><div class="my"><h3>CBC Test</h3>Known as Complete Blood Count Automated Blood<br><br><div class="c-highlight-topTest__height"><div class="o-flex c-highlight-topTest"><div class="c-highlight-topTest__text"><div>E-Reports on same day</div></div></div></div><div><span class="u-font-bold o-font-size--18"><br><br>₹800</span></div></a><div class="u-text--center u-border--std u-line-height-std-half u-font-bold u-pointer" style="border-top: none; line-height: 2.5;"><div class="o-f-color--plight"></div></div></div>
+        </div> </a>
+        <a href="#" class="py"><div class="my"><h3>Liver Function Test</h3>Known as Liver Function Tests Blood<br><br><div class="c-highlight-topTest__height"><div class="o-flex c-highlight-topTest"><div class="c-highlight-topTest__text"><div>E-Reports on same day</div></div></div></div><div><span class="u-font-bold o-font-size--18"><br><br>₹700</span></div></a><div class="u-text--center u-border--std u-line-height-std-half u-font-bold u-pointer" style="border-top: none; line-height: 2.5;"><div class="o-f-color--plight"></div></div></div>
+        </div> </a>  
+        </section>
+        
+    </main>
+    <footer class="footer">
+    <div class="footer-top">
+            
+        <div class="Helpline"><a href="#">Helpline </a></div>
+        <div class="Customer"><a href="#">Customer Care</a></div>
+        
+    
+</div>
+</footer>
+</body>
+</html>

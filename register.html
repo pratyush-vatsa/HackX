@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0 15px 0;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 3px;
+        }
+
+        .registerbtn:hover {
+            opacity: 0.9;
+        }
+
+       
+        a {
+            color: dodgerblue;
+        }
+
+       
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #f1f1f1;
+            margin: 15px 0;
+        }
+
+        
+        h1, p {
+            text-align: center;
+        }
+
+        
+        p a {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="action_page.php" class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="full_name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" name="full_name" id="full_name" required>
+
+        <label for="phone_number"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" name="phone_number" id="phone_number" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="aadhar_number"><b>Aadhar Number</b></label>
+        <input type="text" placeholder="Enter Aadhar Number" name="aadhar_number" id="aadhar_number" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+    </form>
+</body>
+</html>
